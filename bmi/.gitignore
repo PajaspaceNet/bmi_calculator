@@ -1,0 +1,18 @@
+#Tady je vsechno co GIT ignoruje 
+# Python soubory
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Virtuální prostředí
+.venv/
+env/
+venv/
+
+# IDE soubory
+.idea/
+.vscode/
+
+# Systémové soubory
+.DS_Store
+Thumbs.db
