@@ -21,5 +21,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', include('bmi.urls')),  # Přesměrování na URL aplikace BMI
-    path('', include('bmi.urls')),  # bmi_app nahraď názvem tvé aplikace
+ #   path('', include('bmi.urls')),  # bmi_app nahraď názvem tvé aplikace
+     path("", include("bmi.urls")),
 ]

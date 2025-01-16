@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 import time
 
 # Inicializace Selenium WebDriveru
-driver = webdriver.Chrome()  
+driver = webdriver.Chrome()
 
 # Spuštění testu
 try:

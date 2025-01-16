@@ -21,5 +21,5 @@ def bmi_calculator(request):
                 category = "Obezita"
         except (ValueError, ZeroDivisionError):
             bmi = "Chyba ve vstupních datech"
-
-    return render(request, 'bmi_calculator/index.html', {'bmi': bmi, 'category': category})
+    #hlavni aplikace je bmi horni
+    return render(request, 'index.html', {'bmi': bmi, 'category': category})
