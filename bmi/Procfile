@@ -1,1 +1,1 @@
-web: gunicorn bmi_calculation.wsgi --log-file -
+web: gunicorn bmi.wsgi --log-file -
