@@ -1,3 +1,0 @@
-# web: gunicorn bmi_calculator.wsgi
-
-web: gunicorn --pythonpath app app.wsgi
