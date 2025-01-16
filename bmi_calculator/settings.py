@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-@b^=w$t@cb)r5zv@z#xkp)=_!u5tc^0bg-hb82&r^k2hlf*_-8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -116,7 +117,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+#puvoddni to pak muzu zase odkrizkova kdyz nepojede reseni
+#STATIC_URL = 'static/'
+
+# URL pro statické soubory
+STATIC_URL = '/static/'
+
+# Cesta na disku, kam se ukládají statické soubory při collectstatic
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
