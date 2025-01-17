@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-@b^=w$t@cb)r5zv@z#xkp)=_!u5tc^0bg-hb82&r^k2hlf*_-8
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['bmi-calculate.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['.herokuapp.com' , '127.0.0.1']
 
 
 # Application definition
