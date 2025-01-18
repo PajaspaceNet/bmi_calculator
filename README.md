@@ -10,7 +10,7 @@ Tento projekt je jednoduchá webová aplikace  je provozovan v CLOUDU na HEROKu 
 ##  AWS 
  BMI kalkulačku lze snadno nasadit i na platformu **AWS**, například na **EC2** instanci. <br>
  Z důvodu optimalizace nákladů jsem aplikaci na AWS nenasadil, ale v případě potřeby je nasazení možné dle standardních postupů.<br>
-Celý postup atd... v sekci  **Budoucí vylepšení**
+Celý postup atd... v sekci  **[Budoucí vylepšení](#plans)**
 
 
 
@@ -117,6 +117,7 @@ if __name__ == "__main__":
 
 
 ## Budoucí vylepšení
+# plans
 - mozna implementace do AWS , postup:
 <br>
 **1. Pripravime si :-)** <br> 
