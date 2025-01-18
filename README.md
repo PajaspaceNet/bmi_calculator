@@ -116,8 +116,9 @@ if __name__ == "__main__":
 
 
 
-## Budoucí vylepšení
+
 # plans
+**Budoucí vylepšení**
 - mozna implementace do AWS , postup:
 <br>
 **1. Pripravime si :-)** <br> 
