@@ -122,12 +122,13 @@ if __name__ == "__main__":
 - mozna implementace do AWS , postup:
 <br>
 **1. Pripravime si** :-) <br> 
-   Free tier 2<br>
-        AMI: Ubuntu Server 20.04 LTS (free tier eligible).<br>
-        Instance Type: t2.micro (free tier eligible).<br>
-        Key Pair: Dam nový nebo použiju existující.<br>
-        Security Groups: open ports **22 (SSH) a 80 (HTTP).**<br><br>
-    
+<br>
+        Free tier 2<br>
+       AMI:- Ubuntu Server 20.04 LTS (free tier eligible).<br>
+       Instance Type:- t2.micro (free tier eligible).<br>
+       Key Pair: - Dam nový nebo použiju existující.<br>
+      Security Groups: - open ports **22 (SSH) a 80 (HTTP).**<br><br>
+  
 
 **2. Připojení k instanci**
 
