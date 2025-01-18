@@ -33,24 +33,24 @@ Celý postup atd... v sekci  **[Budoucí vylepšení](#plans)**
 
 ## Instalace
 
-1. Naklonujte tento repozitář:
+1. Naklonuj tento repozitář:
    ```bash
    git clone https://github.com/username/bmi_calculator.git
    cd bmi_calculator
    ```
 
-2. Vytvořte a aktivujte virtuální prostředí:
+2. Creatnu a aktivuju virtuální prostředí:
    ```bash
    python -m venv .venv
    source .venv/bin/activate  # Na Windows: .venv\Scripts\activate
    ```
 
-3. Nainstalujte závislosti:
+3. Nainstaluju závislosti:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Spusťte server:
+4. Spusť server:
    ```bash
    python manage.py runserver
    ```
@@ -150,7 +150,7 @@ git clone https://github.com/pajaspacenet/bmi_calculator.git
 cd bmi_calculator
 ```
 
-Vytvořeni virtuální prostředí a nainstalujte závislosti:
+**Vytvořeni virtuální prostředí a nainstalujte závislosti:**
 
     virtualenv venv
     source venv/bin/activate
