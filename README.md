@@ -7,6 +7,10 @@
 
 Tento projekt je jednoduchá webová aplikace  je provozovan v CLOUDU na HEROKu https://bmi-calculate-77890143cb73.herokuapp.com/ a je  postavená na frameworku Django, která umožňuje uživatelům vypočítat svůj BMI index (Body Mass Index) na základě zadané hmotnosti a výšky. Projekt obsahuje základní funkčnost kalkulačky a ukázku testování aplikace pomocí Selenium.
 
+##  AWS 
+Bmi Kalkulacku lze samozrejme instalovat na i na **AWS**. Chtel sem predejit nakladum :-) Vice v sekci **Budoucí vylepšení**
+
+
 
 ## Funkce
 
@@ -111,7 +115,81 @@ if __name__ == "__main__":
 
 
 ## Budoucí vylepšení
+- mozna implementace do AWS , postup:
 
+ , nicmene postup bych volil tento:<br>
+**1. Pripravime si :-)** <br> 
+   Free tier 2<br>
+        AMI: Ubuntu Server 20.04 LTS (free tier eligible).<br>
+        Instance Type: t2.micro (free tier eligible).<br>
+        Key Pair: Dam nový nebo použiju existující.<br>
+        Security Groups: open ports **22 (SSH) a 80 (HTTP).**<br><br>
+    
+
+**2. Připojení k instanci**
+
+    Použiju SSH k připojení:
+```
+    ssh -i "my-key.pem" ubuntu@<public-ip>
+```
+**3. Instalace závislostí**
+```
+sudo apt update
+sudo apt install python3-pip python3-dev nginx 
+pip3 install virtualenv
+```
+**4. Stažení aplikace**
+
+    Naklonuju repo
+```
+git clone https://github.com/pajaspacenet/bmi_calculator.git
+cd bmi_calculator
+```
+
+Vytvořeni virtuální prostředí a nainstalujte závislosti:
+
+    virtualenv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+
+**5. Spuštění aplikace pomocí Gunicorn**
+
+Start Gunicorn:
+```
+gunicorn --workers 3 --bind 0.0.0.0:8000 bmi_calculator.wsgi:application
+```
+
+**6. Konfigurace Nginx**
+```
+sudo nano /etc/nginx/sites-available/bmi_calculator
+```
+Obsah konfigurace:
+
+```
+server {
+    listen 80;
+    server_name <public-ip>;
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+Aktivuj konfiguraci:
+```
+    sudo ln -s /etc/nginx/sites-available/bmi_calculator /etc/nginx/sites-enabled
+    sudo systemctl restart nginx
+```
+
+**7. Otevřu  aplikaci v prohlížeči /doufam :-)) /**
+
+    
+
+**Další možná vylepšení**
 - Přidání dalších jazyků (multijazyčná podpora).
 - Rozšíření o grafické zobrazení BMI výsledků.
 - Implementace pokročilejších testů a CI/CD pipeline.
