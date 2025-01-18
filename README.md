@@ -121,7 +121,7 @@ if __name__ == "__main__":
 **Budoucí vylepšení**
 - mozna implementace do AWS , postup:
 <br>
-**1. Pripravime si :-)** <br> 
+**1. Pripravime si** :-) <br> 
    Free tier 2<br>
         AMI: Ubuntu Server 20.04 LTS (free tier eligible).<br>
         Instance Type: t2.micro (free tier eligible).<br>
