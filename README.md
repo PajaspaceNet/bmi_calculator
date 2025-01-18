@@ -5,8 +5,8 @@
 
 
 
-Tento projekt je jednoduchá webová aplikace postavená na frameworku Django, která umožňuje uživatelům vypočítat svůj BMI index (Body Mass Index) na základě zadané hmotnosti a výšky. Projekt obsahuje základní funkčnost kalkulačky a ukázku testování aplikace pomocí Selenium.
-Tento projekt je provozovan v CLOUDU na HEROKu https://bmi-calculate-77890143cb73.herokuapp.com/
+Tento projekt je jednoduchá webová aplikace  je provozovan v CLOUDU na HEROKu https://bmi-calculate-77890143cb73.herokuapp.com/ a je  postavená na frameworku Django, která umožňuje uživatelům vypočítat svůj BMI index (Body Mass Index) na základě zadané hmotnosti a výšky. Projekt obsahuje základní funkčnost kalkulačky a ukázku testování aplikace pomocí Selenium.
+
 
 ## Funkce
 
