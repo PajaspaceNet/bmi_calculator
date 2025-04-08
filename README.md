@@ -5,13 +5,15 @@
 
 
 
-Tento projekt je jednoduchá webová aplikace  je provozovan v CLOUDU na HEROKu https://bmi-calculate-77890143cb73.herokuapp.com/ a je  postavená na frameworku Django, která umožňuje uživatelům vypočítat svůj BMI index (Body Mass Index) na základě zadané hmotnosti a výšky. Projekt obsahuje základní funkčnost kalkulačky a ukázku testování aplikace pomocí Selenium.
+Tento projekt je jednoduchá webová aplikace  byla  provozovan** v CLOUDU na HEROKu https://bmi-calculate-77890143cb73.herokuapp.com/ a je  postavená na frameworku Django, která umožňuje uživatelům vypočítat svůj BMI index (Body Mass Index) na základě zadané hmotnosti a výšky. Projekt obsahuje základní funkčnost kalkulačky a ukázku testování aplikace pomocí Selenium.
 
 ## Poznámka o Heroku (pro demonstrační účely)
 
 Pokud aplikaci provozujete na platformě **Heroku** (např. v bezplatném plánu), poprosim trochu o trpělivost protože:
 - Bezplatné dynos mohou být **dočasně uspány** při delším období nečinnosti.
 - První požadavek po uspání může trvat déle kvůli restartu dynosu.
+
+*pozn:: -aplikace je  v tuto chvili je vypnuta z duvodu uctovani dalsich mesicnich poplatku* 
 
 ##  AWS 
  BMI kalkulačku lze snadno nasadit i na platformu **AWS**, například na **EC2** instanci. <br>
