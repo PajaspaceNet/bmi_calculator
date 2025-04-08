@@ -13,7 +13,7 @@ Pokud aplikaci provozujete na platformě **Heroku** (např. v bezplatném plánu
 - Bezplatné dynos mohou být **dočasně uspány** při delším období nečinnosti.
 - První požadavek po uspání může trvat déle kvůli restartu dynosu.
 
-*pozn:: -aplikace je  v tuto chvili je vypnuta z duvodu uctovani dalsich mesicnich poplatku* 
+**pozn:: -aplikace je  v tuto chvili je vypnuta z duvodu uctovani dalsich mesicnich poplatku**
 
 ##  AWS 
  BMI kalkulačku lze snadno nasadit i na platformu **AWS**, například na **EC2** instanci. <br>
